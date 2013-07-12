@@ -1,0 +1,11 @@
+---
+layout: page
+---
+<div id="blog-archives" class="category">
+</div>
+<ul>
+  {%   for tag in page.tags %}
+  <li><a href="{{root_url}}/tag/{{ tag }}">{{ tag }}</a></li>
+  {%   endfor %}
+</ul>
+
