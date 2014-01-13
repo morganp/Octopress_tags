@@ -6,7 +6,7 @@ footer: false
 </div>
 <ul>
   {%   for tag in page.tags %}
-  <li><a href="{{root_url}}/tag/{{ tag }}">{{ tag }}</a></li>
+  <li>{{ tag | tag_link }}</li>
   {%   endfor %}
 </ul>
 
