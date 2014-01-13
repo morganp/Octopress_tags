@@ -39,7 +39,6 @@ _layouts/post.html
           {% include post/author.html %}
           {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
           {% include post/categories.html %}
-          {% include post/tags.html %}
         </p>
         {% unless page.sharing == false %}
           {% include post/sharing.html %}
