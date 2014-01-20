@@ -18,7 +18,7 @@ module Jekyll
       if site.layouts.key? 'tag_index'
         dir = site.config['tag_dir'] || 'tag'
         ## Create Top level tag list /tag/index.html
-        write_all_tags_index(site, dir, site.tags.keys )
+        write_all_tags_index(site, dir, site.tags.keys.sort_by { |x| x.downcase } )
         
         ## Create /tag/{{tag}}/index.html
         site.tags.keys.each do |tag|
