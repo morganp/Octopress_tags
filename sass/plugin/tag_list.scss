@@ -1,0 +1,25 @@
+
+#tag-list {
+    column-count:        auto;
+    -moz-column-count:   auto; /* Firefox */
+    -webkit-column-count:auto; /* Safari and Chrome */
+
+    column-gap:        40px;
+    -moz-column-gap:   40px; /* Firefox */
+    -webkit-column-gap:40px; /* Safari and Chrome */    
+
+    column-width:        100px;
+    -moz-column-width:   100px; /* Firefox */
+    -webkit-column-width:100px; /* Safari and Chrome */
+
+    a.tag {
+      @extend .sans;
+      color: $text-color-light;
+    }
+
+    @media only screen and (min-width: 550px) {
+      a.tag {
+        line-height: 1.1em;
+      }
+    }
+}
