@@ -22,7 +22,7 @@ module Jekyll
         
         ## Create /tag/{{tag}}/index.html
         site.tags.keys.each do |tag|
-          write_tag_index(site, File.join(dir, tag), tag)
+          write_tag_index(site, File.join(dir, tag.to_url), tag)
         end
       end
     end
